@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Give - Stripe Gateway
+ * Plugin Name: Give - Bongloy Gateway
  * Plugin URI:  https://givewp.com/addons/stripe-gateway/
- * Description: Adds the Stripe.com payment gateway to the available Give payment methods.
+ * Description: Adds the Bongloy.com payment gateway to the available Give payment methods.
  * Version:     1.4.7
  * Author:      WordImpress
  * Author URI:  https://wordimpress.com
