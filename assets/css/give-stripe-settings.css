@@ -1,0 +1,7 @@
+/**
+ * Stripe Admin Settings CSS
+ */
+
+.stripe-checkout-field, .give_settings .cmb2-wrap .cmb-row.stripe-checkout-field {
+    display: none;
+}

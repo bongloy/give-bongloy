@@ -1,0 +1,618 @@
+# Copyright (C) 2017 Give-Stripe
+# This file is distributed under the same license as the Give-Stripe package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Give-Stripe\n"
+"Report-Msgid-Bugs-To: https://github.com/WordImpress/Give-Stripe/issues/new\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Language-Team: WordImpress <info@wordimpress.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: give-stripe.php:199
+msgid "<strong>Activation Error:</strong> You must have the <a href=\"%s\" target=\"_blank\">Give</a> plugin installed and activated for Stripe to activate."
+msgstr ""
+
+#: give-stripe.php:215
+msgid "<strong>Activation Error:</strong> You must have <a href=\"%1$s\" target=\"_blank\">Give</a> core version %2$s+ for the Give Stripe add-on to activate."
+msgstr ""
+
+#: give-stripe.php:233
+msgid "The Stripe payment gateway is almost ready. To get started, <a href=\"%s\">set your Stripe account keys</a>."
+msgstr ""
+
+#: give-stripe.php:252
+msgid "The plugin could not be activated. The minimum PHP version required for this plugin is %1$s. You are running %2$s. Please contact your web host to upgrade your server's PHP version."
+msgstr ""
+
+#: give-stripe.php:254
+msgid "The plugin has been deactivated. The minimum PHP version required for this plugin is %1$s. You are running %2$s."
+msgstr ""
+
+#: give-stripe.php:263
+msgid "The plugin could not be activated. cURL is not installed. Please contact your web host to install cURL."
+msgstr ""
+
+#: give-stripe.php:266
+msgid "The plugin has been deactivated. cURL is not installed. Please contact your web host to install cURL."
+msgstr ""
+
+#: give-stripe.php:312
+msgid "Stripe - Credit Card"
+msgstr ""
+
+#: give-stripe.php:313
+msgid "Credit Card"
+msgstr ""
+
+#: give-stripe.php:316
+msgid "Stripe - ACH"
+msgstr ""
+
+#: give-stripe.php:317
+msgid "Bank Account"
+msgstr ""
+
+#: give-stripe.php:341, give-stripe.php:360
+msgid "Preapproved"
+msgstr ""
+
+#: give-stripe.php:346
+msgid "Active <span class=\"count\">(%s)</span>"
+msgid_plural "Active <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/give-stripe-activation.php:39
+msgid "Stripe Gateway"
+msgstr ""
+
+#: includes/admin/give-stripe-activation.php:73
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/give-stripe-activation.php:107
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/give-stripe-activation.php:117
+msgid "Add-ons"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:30
+msgid "Stripe Settings"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:36
+msgid "Live Secret Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:37
+msgid "Enter your live secret key, found in your Stripe Account Settings."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:42
+msgid "Live Publishable Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:43
+msgid "Enter your live publishable key, found in your Stripe Account Settings."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:48
+msgid "Test Secret Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:49
+msgid "Enter your test secret key, found in your Stripe Account Settings."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:54
+msgid "Test Publishable Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:55
+msgid "Enter your test publishable key, found in your Stripe Account Settings."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:60
+msgid "Collect Billing Details"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:61
+msgid "This option will enable the billing details section for Stripe which requires the donor's address to complete the donation. These fields are not required by Stripe to process the transaction, but you may have the need to collect the data."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:66
+msgid "Preapprove Only?"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:67
+msgid "Check this if you would like to preapprove payments but <strong>not charge until up to seven days</strong> after the donation has been made."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:72
+msgid "Stripe JS Incompatibility"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:73
+msgid "If your site has problems with processing cards using Stripe JS, check this option to use a fallback method of processing."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:78
+msgid "Enable Stripe Checkout"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:79
+msgid "This option will enable <a href=\"%s\" target=\"_blank\">Stripe's modal checkout</a> where the donor will complete the donation rather than the default credit card fields on page."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:84
+msgid "Checkout Heading"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:85
+msgid "This is the main heading within the modal checkout. Typically, this is the name of your organization, cause, or website."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:92
+msgid "Accept Alipay"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:93
+msgid "Enable the ability to accept payments via Alipay, China's most popular payment method. Only Stripe users in the United States can accept Alipay for USD payments."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:99
+msgid "Accept Bitcoin"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:100
+msgid "Enable the ability to accept Bitcoin, a digital cryptocurrency, alongside other types of payment. A USD-denominated bank account is required before you can accept Bitcoin payments."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:106
+msgid "Stripe Checkout Image"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:107
+msgid "This image appears in when the Stripe checkout modal window opens and provides better brand recognition that leads to increased conversion rates. The recommended minimum size is a square image at 128x128px. The supported image types are: .gif, .jpeg, and .png."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:116
+msgid "Add or Upload Image"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:121
+msgid "Stripe - ACH Settings"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:127
+msgid "Plaid Client ID"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:128
+msgid "Enter your Plaid Client ID, found in your Plaid account dashboard."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:133
+msgid "Plaid Public Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:134
+msgid "Enter your Plaid public key, found in your Plaid account dashboard."
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:139
+msgid "Plaid Secret Key"
+msgstr ""
+
+#: includes/admin/give-stripe-admin.php:140
+msgid "Enter your Plaid secret key, found in your Plaid account dashboard."
+msgstr ""
+
+#: includes/give-stripe-ach.php:97, includes/give-stripe-ach.php:102, includes/give-stripe-ach.php:121, includes/give-stripe-gateway.php:124, includes/give-stripe-gateway.php:467
+msgid "Missing Stripe Token"
+msgstr ""
+
+#: includes/give-stripe-ach.php:97
+msgid "The Stripe ACH gateway failed to generate the Plaid token."
+msgstr ""
+
+#: includes/give-stripe-ach.php:102
+msgid "The Stripe ACH gateway failed to generate the Plaid account ID."
+msgstr ""
+
+#: includes/give-stripe-ach.php:121
+msgid "The Stripe ACH gateway failed to make the call to the Plaid server to get the Stripe bank account token along with the Plaid access token that can be used for other Plaid API requests."
+msgstr ""
+
+#: includes/give-stripe-ach.php:122
+msgid "There was a problem communicating with the payment gateway. Please try again."
+msgstr ""
+
+#: includes/give-stripe-ach.php:169, includes/give-stripe-ach.php:206, includes/give-stripe-ach.php:219, includes/give-stripe-ach.php:305, includes/give-stripe-gateway.php:193, includes/give-stripe-gateway.php:249, includes/give-stripe-gateway.php:311, includes/give-stripe-gateway.php:321, includes/give-stripe-gateway.php:460, includes/give-stripe-gateway.php:576, includes/give-stripe-gateway.php:619, includes/give-stripe-gateway.php:714, includes/give-stripe-gateway.php:773, includes/give-stripe-helpers.php:449, includes/give-stripe-preapproval.php:181, includes/give-stripe-preapproval.php:187, includes/give-stripe-preapproval.php:203
+msgid "Stripe Error"
+msgstr ""
+
+#: includes/give-stripe-ach.php:169
+msgid "The Stripe Gateway returned an error while checking if a Stripe source exists. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-ach.php:204
+msgid "There was a problem identifying your bank account with the payment gateway. Please try you donation again."
+msgstr ""
+
+#: includes/give-stripe-ach.php:206
+msgid "The Stripe Gateway returned an error while checking if a Stripe source exists."
+msgstr ""
+
+#: includes/give-stripe-ach.php:219, includes/give-stripe-gateway.php:193, includes/give-stripe-gateway.php:249, includes/give-stripe-gateway.php:311
+msgid "The Stripe Gateway returned an error while processing a donation. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-ach.php:220, includes/give-stripe-gateway.php:194, includes/give-stripe-gateway.php:312, includes/give-stripe-gateway.php:320
+msgid "An error occurred while processing the donation. Please try again."
+msgstr ""
+
+#: includes/give-stripe-ach.php:304
+msgid "The Stripe Gateway returned an error while processing a donation."
+msgstr ""
+
+#: includes/give-stripe-ach.php:305
+msgid "The Stripe Gateway returned an error while processing an ACH donation. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-ach.php:351, includes/give-stripe-ach.php:352
+msgid "The Plaid client ID must be entered in settings."
+msgstr ""
+
+#: includes/give-stripe-ach.php:357, includes/give-stripe-ach.php:358
+msgid "The Plaid secret key must be entered in settings."
+msgstr ""
+
+#: includes/give-stripe-ach.php:363, includes/give-stripe-ach.php:364
+msgid "The Plaid public key must be entered in settings."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:123
+msgid "The Stripe token is missing. Please contact support."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:124, includes/give-stripe-gateway.php:467
+msgid "A Stripe token failed to be generated. Please check Stripe logs for more information."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:172
+msgid "Stripe Customer Creation Failed"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:172
+msgid "Customer creation failed while processing the donation. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:173
+msgid "The Stripe Gateway returned an error while processing the donation."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:321
+msgid "An error occurred retrieving or creating the "
+msgstr ""
+
+#: includes/give-stripe-gateway.php:384
+msgid "Your donation could not be recorded, please contact the site administrator."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:459, includes/give-stripe-gateway.php:575
+msgid "An occurred while processing the donation with the gateway. Please try your donation again."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:460
+msgid "The Stripe Gateway returned an error while creating the customer payment token. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:466
+msgid "Missing Stripe token. Please contact support."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:560
+msgid "Customer for "
+msgstr ""
+
+#: includes/give-stripe-gateway.php:576
+msgid "The Stripe Gateway returned an error while creating the customer. Details: %s"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:604
+msgid "The Stripe payment gateway returned an error while processing the donation."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:608, includes/give-stripe-helpers.php:445
+msgid "Message: %s"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:610, includes/give-stripe-helpers.php:446
+msgid "Code: %s"
+msgstr ""
+
+#: includes/give-stripe-gateway.php:615
+msgid "The Stripe API request was invalid, please try again."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:639
+msgid "Please enter a name for the credit card."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:643
+msgid "Please enter a credit card number."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:647
+msgid "Please enter a CVC/CVV for the credit card."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:651
+msgid "Please enter an expiration month."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:655
+msgid "Please enter an expiration year."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:714
+msgid "The Stripe API secret key is missing. Error occurred when processing a Stripe webhook event."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:756
+msgid "Charge refunded in Stripe."
+msgstr ""
+
+#: includes/give-stripe-gateway.php:773
+msgid "An error occurred while processing a webhook."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:55
+msgid "Credit Card Info"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:60
+msgid "This is a secure SSL encrypted payment."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:66
+msgid "Card Number"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:69
+msgid "The (typically) 16 digits on the front of your credit card."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:74
+msgid "Card number"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:79
+msgid "CVC"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:82
+msgid "The 3 digit (back) or 4 digit (front) value on your card."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:87
+msgid "Security code"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:92
+msgid "Name on the Card"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:95
+msgid "The name printed on the front of your credit card."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:101
+msgid "Card name"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:108
+msgid "Expiration"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:111
+msgid "The date your credit card expires, typically on the front of the card."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:122
+msgid "MM/YY"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:258
+msgid "Preapproval Pending"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:285
+msgid "Untitled donation form"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:439
+msgid "Charge refunded in Stripe: %s"
+msgstr ""
+
+#: includes/give-stripe-helpers.php:444
+msgid "The Stripe payment gateway returned an error while refunding a donation."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:460
+msgid "Something went wrong while refunding the charge in Stripe."
+msgstr ""
+
+#: includes/give-stripe-helpers.php:463
+msgid "Error"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:56
+msgid "The preapproved payment was successfully charged."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:59
+msgid "The preapproved payment failed to be charged. View order details for further details."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:62
+msgid "The preapproved payment was successfully cancelled."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:133
+msgid "Preapproval cancelled"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:166
+msgid "Charge Error: No Stripe charge ID found for this transaction."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:179, includes/give-stripe-preapproval.php:181, includes/give-stripe-preapproval.php:185, includes/give-stripe-preapproval.php:187
+msgid "The Stripe Gateway returned an error while charging a preapproved donation."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:179, includes/give-stripe-preapproval.php:185
+msgid "Please check the payment gateway's error log for additional details."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:180, includes/give-stripe-preapproval.php:186, includes/give-stripe-preapproval.php:202
+msgid "An error occurred when charging this payment in Stripe. Please check the <a href=\"%s\">payment gateway error logs</a> for additional details."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:181, includes/give-stripe-preapproval.php:187
+msgid "Details: %s"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:194
+msgid "Stripe Charge ID: "
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:203
+msgid "The Stripe Gateway returned an error while processing a charge for a preapproved payment."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:231
+msgid "Approved"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:233
+msgid "Cancelled"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:256, includes/give-stripe-preapproval.php:309
+msgid "Process Payment"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:257, includes/give-stripe-preapproval.php:310
+msgid "Cancel Preapproval"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:262
+msgid "n/a"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:308
+msgid "Approve / Deny:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:327
+msgid "Preapproval"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:367
+msgid "A New Pending Donation is Awaiting Your Approval"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:375
+msgid "Good news!"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:376
+msgid "A new donation has been made on %s and it is awaiting your review. You have seven days after the donation has been made to approve or decline it."
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:377, includes/give-stripe-preapproval.php:444
+msgid "Donor:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:378, includes/give-stripe-preapproval.php:447
+msgid "Amount:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:379
+msgid "Date:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:380
+msgid "Click Here to View Donation Details &raquo;"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:390
+msgid "New Donation Awaiting Approval"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:401
+msgid "Preapproval donation admin email notice sent to: "
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:436
+msgid "Your Donation Has Been Preapproved"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:441
+msgid "Dear"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:442
+msgid "Thank you for your donation. Your generosity is appreciated! Your card will be charged within seven days pending approval of the donation. You will receive an additional email receipt approved. Here are the details of your donation for your records:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:443
+msgid "Status:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:445
+msgid "Donation:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:446
+msgid "Donation Date:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:448
+msgid "Payment Method:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:449
+msgid "Payment ID:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:450
+msgid "Receipt ID:"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:453
+msgid "Sincerely,"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:464
+msgid "Donation Preapproved"
+msgstr ""
+
+#: includes/give-stripe-preapproval.php:475
+msgid "Preapproved donation email notice sent to donor at: "
+msgstr ""
+
+#: includes/give-stripe-scripts.php:153
+msgid "Refund Charge in Stripe?"
+msgstr ""
