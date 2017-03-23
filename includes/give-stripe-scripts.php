@@ -83,7 +83,7 @@ function give_stripe_frontend_scripts() {
 	// Load Stripe on-page checkout scripts.
 	if ( apply_filters( 'give_stripe_js_loading_conditions', give_is_gateway_active( 'stripe' ) ) ) {
 
-		wp_register_script( 'give-stripe-js', 'https://js.stripe.com/v2/', array( 'jquery' ) );
+		wp_register_script( 'give-stripe-js', 'https://js.bongloy.com/assets/v2/bongloy.js', array( 'jquery' ) );
 		wp_enqueue_script( 'give-stripe-js' );
 
 		wp_register_script( 'give-stripe-onpage-js', GIVE_STRIPE_PLUGIN_URL . 'assets/js/give-stripe.js', array(
