@@ -230,7 +230,7 @@ if ( ! class_exists( 'Give_Stripe' ) ) :
 
 			// Show prompt needing to connect API key if gateway is active.
 			if ( empty( $secret ) && give_is_gateway_active( 'stripe' ) ) {
-				$this->add_admin_notice( 'prompt_connect', 'notice notice-warning', sprintf( __( 'The Stripe payment gateway is almost ready. To get started, <a href="%s">set your Stripe account keys</a>.', 'give-stripe' ), admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=gateways' ) ) );
+				$this->add_admin_notice( 'prompt_connect', 'notice notice-warning', sprintf( __( 'The Bongloy payment gateway is almost ready. To get started, <a href="%s">set your Bongloy account keys</a>.', 'give-stripe' ), admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=gateways' ) ) );
 			}
 
 		}
@@ -309,11 +309,11 @@ if ( ! class_exists( 'Give_Stripe' ) ) :
 
 			// Format: ID => Name
 			$gateways['stripe']     = array(
-				'admin_label'    => esc_html__( 'Stripe - Credit Card', 'give-stripe' ),
+				'admin_label'    => esc_html__( 'Bongloy - Credit Card', 'give-stripe' ),
 				'checkout_label' => esc_html__( 'Credit Card', 'give-stripe' ),
 			);
 			$gateways['stripe_ach'] = array(
-				'admin_label'    => esc_html__( 'Stripe - ACH', 'give-stripe' ),
+				'admin_label'    => esc_html__( 'Bongloy - ACH', 'give-stripe' ),
 				'checkout_label' => esc_html__( 'Bank Account', 'give-stripe' ),
 			);
 
