@@ -177,7 +177,7 @@ class ApiRequestor
             throw new Error\Authentication($msg);
         }
 
-        $absUrl = $this->_apiBase.$url;
+        $absUrl = preg_replace('/^(\/api){2,}/', '/api', $this->_apiBase.$url);
         $params = self::_encodeObjects($params);
         $defaultHeaders = $this->_defaultHeaders($myApiKey);
         if (Stripe::$apiVersion) {
