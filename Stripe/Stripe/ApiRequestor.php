@@ -30,7 +30,8 @@ class Stripe_ApiRequestor
   public static function apiUrl($url='')
   {
     $apiBase = Stripe::$apiBase;
-    return preg_replace('/^(\/api){2,}/', '/api', "$apiBase$url");
+    $normalizedUrl = preg_replace('/^(\/api){2,}/', '/api', $url);
+    return "$apiBase$normalizedUrl";
   }
 
   /**
