@@ -306,23 +306,23 @@ class Stripe_ApiRequestor
     case CURLE_COULDNT_CONNECT:
     case CURLE_COULDNT_RESOLVE_HOST:
     case CURLE_OPERATION_TIMEOUTED:
-      $msg = "Could not connect to Stripe ($apiBase).  Please check your "
+      $msg = "Could not connect to Bongloy ($apiBase).  Please check your "
            . "internet connection and try again.  If this problem persists, "
-           . "you should check Stripe's service status at "
-           . "https://twitter.com/stripestatus, or";
+           . "you should check Bongloy's service status "
+           . "or";
         break;
     case CURLE_SSL_CACERT:
     case CURLE_SSL_PEER_CERTIFICATE:
-      $msg = "Could not verify Stripe's SSL certificate.  Please make sure "
+      $msg = "Could not verify Bongloy's SSL certificate.  Please make sure "
            . "that your network is not intercepting certificates.  "
            . "(Try going to $apiBase in your browser.)  "
            . "If this problem persists,";
         break;
     default:
-      $msg = "Unexpected error communicating with Stripe.  "
+      $msg = "Unexpected error communicating with Bongloy.  "
            . "If this problem persists,";
     }
-    $msg .= " let us know at support@stripe.com.";
+    $msg .= " let us know at support@bongloy.com.";
 
     $msg .= "\n\n(Network error [errno $errno]: $message)";
     throw new Stripe_ApiConnectionError($msg);
