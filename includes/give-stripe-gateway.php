@@ -120,8 +120,8 @@ class Give_Stripe_Gateway {
 		if ( ! $card_data && ! $this->is_stripe_popup_enabled() ) {
 
 			// No Stripe token.
-			give_set_error( 'no_token', esc_html__( 'The Stripe token is missing. Please contact support.', 'give-stripe' ) );
-			give_record_gateway_error( esc_html__( 'Missing Stripe Token', 'give-stripe' ), esc_html__( 'A Stripe token failed to be generated. Please check Stripe logs for more information.', 'give-stripe' ) );
+			give_set_error( 'no_token', esc_html__( 'The Bongloy token is missing. Please contact support.', 'give-stripe' ) );
+			give_record_gateway_error( esc_html__( 'Missing Bongloy Token', 'give-stripe' ), esc_html__( 'A Bongloy token failed to be generated. Please check Bongloy logs for more information.', 'give-stripe' ) );
 
 			return;
 
@@ -170,7 +170,7 @@ class Give_Stripe_Gateway {
 
 					//No customer, failed.
 					give_record_gateway_error( esc_html__( 'Stripe Customer Creation Failed', 'give-stripe' ), sprintf( esc_html__( 'Customer creation failed while processing the donation. Details: %s', 'give-stripe' ), json_encode( $payment_data ) ) );
-					give_set_error( 'stripe_error', esc_html__( 'The Stripe Gateway returned an error while processing the donation.', 'give-stripe' ) );
+					give_set_error( 'stripe_error', esc_html__( 'The Bongloy Gateway returned an error while processing the donation.', 'give-stripe' ) );
 					give_send_back_to_checkout( '?payment-mode=stripe' );
 
 				}
@@ -190,7 +190,7 @@ class Give_Stripe_Gateway {
 			} catch ( Exception $e ) {
 
 				//Something went wrong outside of Stripe.
-				give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
+				give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
 				give_set_error( 'stripe_error', esc_html__( 'An error occurred while processing the donation. Please try again.', 'give-stripe' ) );
 				give_send_back_to_checkout( '?payment-mode=stripe' );
 
@@ -246,7 +246,7 @@ class Give_Stripe_Gateway {
 
 			give_send_back_to_checkout( '?payment-mode=stripe' );
 
-			give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
+			give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
 		}
 
 
@@ -308,7 +308,7 @@ class Give_Stripe_Gateway {
 		} catch ( Exception $e ) {
 
 			//Something went wrong outside of Stripe.
-			give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
+			give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy Gateway returned an error while processing a donation. Details: %s', 'give-stripe' ), $e->getMessage() ) );
 			give_set_error( 'stripe_error', esc_html__( 'An error occurred while processing the donation. Please try again.', 'give-stripe' ) );
 			give_send_back_to_checkout( '?payment-mode=stripe' );
 
@@ -318,7 +318,7 @@ class Give_Stripe_Gateway {
 		if ( ! $card_id ) {
 
 			give_set_error( 'stripe_error', esc_html__( 'An error occurred while processing the donation. Please try again.', 'give-stripe' ) );
-			give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), esc_html__( 'An error occurred retrieving or creating the ', 'give-stripe' ) );
+			give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), esc_html__( 'An error occurred retrieving or creating the ', 'give-stripe' ) );
 			give_send_back_to_checkout( '?payment-mode=stripe' );
 
 			return false;
@@ -457,14 +457,14 @@ class Give_Stripe_Gateway {
 
 					give_send_back_to_checkout( '?payment-mode=stripe&form_id=' . $donation_data['post_data']['give-form-id'] );
 					give_set_error( 'stripe_error', esc_html__( 'An occurred while processing the donation with the gateway. Please try your donation again.', 'give-stripe' ) );
-					give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe Gateway returned an error while creating the customer payment token. Details: %s', 'give-stripe' ), $e->getMessage() ) );
+					give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy Gateway returned an error while creating the customer payment token. Details: %s', 'give-stripe' ), $e->getMessage() ) );
 				}
 
 			} elseif ( ! $this->is_stripe_popup_enabled() ) {
 
 				//No Stripe token and fallback mode is disabled.
-				give_set_error( 'no_token', esc_html__( 'Missing Stripe token. Please contact support.', 'give-stripe' ) );
-				give_record_gateway_error( esc_html__( 'Missing Stripe Token', 'give-stripe' ), esc_html__( 'A Stripe token failed to be generated. Please check Stripe logs for more information.', 'give-stripe' ) );
+				give_set_error( 'no_token', esc_html__( 'Missing Bongloy token. Please contact support.', 'give-stripe' ) );
+				give_record_gateway_error( esc_html__( 'Missing Stripe Token', 'give-stripe' ), esc_html__( 'A Bongloy token failed to be generated. Please check Bongloy logs for more information.', 'give-stripe' ) );
 
 			}
 
@@ -573,7 +573,7 @@ class Give_Stripe_Gateway {
 
 			give_send_back_to_checkout( '?payment-mode=stripe&form_id=' . $donation_data['post_data']['give-form-id'] );
 			give_set_error( 'stripe_error', esc_html__( 'An occurred while processing the donation with the gateway. Please try your donation again.', 'give-stripe' ) );
-			give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe Gateway returned an error while creating the customer. Details: %s', 'give-stripe' ), $e->getMessage() ) );
+			give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy Gateway returned an error while creating the customer. Details: %s', 'give-stripe' ), $e->getMessage() ) );
 		}
 
 		if ( ! empty( $cu ) ) {
@@ -601,7 +601,7 @@ class Give_Stripe_Gateway {
 		$body = $exception->getJsonBody();
 		$err  = $body['error'];
 
-		$log_message = esc_html__( 'The Stripe payment gateway returned an error while processing the donation.', 'give-stripe' ) . '<br><br>';
+		$log_message = esc_html__( 'The Bongloy payment gateway returned an error while processing the donation.', 'give-stripe' ) . '<br><br>';
 
 		// Bad Request of some sort.
 		if ( isset( $err['message'] ) ) {
@@ -612,11 +612,11 @@ class Give_Stripe_Gateway {
 
 			give_set_error( 'stripe_request_error', $err['message'] );
 		} else {
-			give_set_error( 'stripe_request_error', esc_html__( 'The Stripe API request was invalid, please try again.', 'give-stripe' ) );
+			give_set_error( 'stripe_request_error', esc_html__( 'The Bongloy API request was invalid, please try again.', 'give-stripe' ) );
 		}
 
 		//Log it with DB
-		give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), $log_message );
+		give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), $log_message );
 		give_send_back_to_checkout( '?payment-mode=' . $payment_mode );
 
 
@@ -711,7 +711,7 @@ class Give_Stripe_Gateway {
 			if ( empty( $secret_key ) ) {
 				status_header( 500 );
 				//Something went wrong outside of Stripe.
-				give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'The Stripe API secret key is missing. Error occurred when processing a Stripe webhook event.', 'give-stripe' ) ) );
+				give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'The Bongloy API secret key is missing. Error occurred when processing a Bongloy webhook event.', 'give-stripe' ) ) );
 				die( '-1' ); // Failed
 			}
 
@@ -770,7 +770,7 @@ class Give_Stripe_Gateway {
 			} else {
 				status_header( 500 );
 				// Something went wrong outside of Stripe.
-				give_record_gateway_error( esc_html__( 'Stripe Error', 'give-stripe' ), sprintf( esc_html__( 'An error occurred while processing a webhook.', 'give-stripe' ) ) );
+				give_record_gateway_error( esc_html__( 'Bongloy Error', 'give-stripe' ), sprintf( esc_html__( 'An error occurred while processing a webhook.', 'give-stripe' ) ) );
 				die( '-1' ); // Failed
 			}
 		}
