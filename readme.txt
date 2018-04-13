@@ -2,7 +2,7 @@
 
 This library is deprecated and is here for reference only. Please use the official Give Stripe Add-On (https://givewp.com/documentation/add-ons/stripe-gateway/ instead.
 
-In order to use Give with Bongloy replace `public static $apiBase = 'https://api.stripe.com';` with `public static $apiBase = 'https://api.bongloy.com';` in https://github.com/bongloy/give-bongloy/blob/master/Stripe/Stripe/Stripe.php
+In order to use Give with Bongloy replace `public static $apiBase = 'https://api.stripe.com';` with `public static $apiBase = 'https://api.bongloy.com';` in https://github.com/bongloy/give-bongloy/blob/master/Stripe/Stripe/Stripe.php and replace `wp_register_script( 'give-stripe-js', 'https://js.stripe.com/v3', array( 'jquery' ) );` with `wp_register_script( 'give-stripe-js', 'https://js.bongloy.com/v3', array( 'jquery' ) );` in https://github.com/bongloy/give-bongloy/blob/master/includes/give-stripe-scripts.php
 
 === Give - Stripe Gateway ===
 Contributors: wordimpress
